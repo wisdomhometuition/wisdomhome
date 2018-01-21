@@ -1,1 +1,342 @@
-<h1>i am vikram</h1>
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+     <meta name="description" content="home tutor">
+    <meta name="keywords" content="home tutor,home tuition,study">
+     <meta name="author" content="TARUN SAURABH">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class = "body" id = "body">
+    <div id="particle"></div>
+    <div id="overlay" class = "overlay">
+        <header class = "mainHeader">
+            <div class = "imageHeader" >
+               <img class ="logo" src= "picture/logo.gif" >
+                <iframe src="https://www.youtube.com/embed/i93Z7zljQ7I?playlist=i93Z7zljQ7I&autoplay=1&loop=1" frameborder="0" allowfullscreen  style="volume: silent">
+                </iframe>
+            </div>
+            
+            <nav id = "navbar">
+                <ul>
+                    <li class = "active"><a href="">Home</a></li>
+                    <li><a href="#student">Get a tutor</a></li>
+                    <li><a href="#tutor">Become a tutor</a></li>
+                    <li><a href="#material">Study Material</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#"><div class = "blog" onclick="blognotmade()">Blog</div></a></li>
+                    <div class="dropdown">
+                    <button class="dropbtn">Contacts
+<!--                    <i class="fa fa-caret-down"></i>-->
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">facebook</a><br>
+                        <a href="#"><div class = "whatsapp" onclick="number()">whatsapp</div></a><br>
+                        <a href="#"><div class = "email" onclick="email()">Email</div></a>
+                    </div>
+                    </div> 
+                </ul>
+            </nav>                            
+        </header>
+        
+        <!-- +++++++++++++++++++++++++get home tutor+++++++++++++++++++++++ -->
+      
+     <div id="myModal" class="modal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <span class="modal_heading">
+                    ENTER YOUR DETAILS
+                </span>
+                <form action="#">
+                    <input type="email" name="email" placeholder="Email(optional)" ><br>
+                    <input type="text" name= "name" placeholder="Name"><br>
+<!--                    <input type="password" placeholder="Password"><br>-->
+                    <input type="text" name="number" placeholder="Mobile Number">
+                    <div class="part2">
+                    <p>Select Gender :
+                    <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    </select></p>
+                                        
+<!--
+                     <fieldset data-role="controlgroup" data-type="horizontal">
+      <legend>Choose your gender:</legend>
+       
+        <input type="radio" class = "radio" name="gender" id="male" value="male"> Male
+        <br>
+        <input type="radio" class = "radio" name="gender" id="female" value="female">Female<br>
+      </fieldset>
+-->
+                                     
+<!--
+                        Gender<br>
+                    <label >
+                    <input type="radio" name="gender" value="male" />
+                    Male
+                    </label>
+                       <br>
+                   <label>
+                    <input type="radio" name="gender" value="female" />
+                    Female
+                    </label>
+-->                  
+                    
+                    <p>Select Age Group :
+                    <select name="devices">
+                    <option value="category1">18-25</option>
+                    <option value="category2">25-30</option>
+                    <option value="category3">30-40</option>
+                    <option value="category4"> > 40</option>
+                    </select></p>
+                    <p>Occupation :
+                    <select name="devices">
+                    <option value="student">Student</option>
+                   <!-- <option value="teacher">Teacher</option>
+                    <option value="private">Private Sector</option>
+                    <option value="other"> Other</option>-->
+                    </select></p>
+                    </div>
+                    <input type="submit" class="submit" value="Submit">
+                </form>
+             </div>
+      </div>
+       
+       
+        <!-- +++++++++++++++++++++become home tutor++++++++++++++++++++++ -->
+      
+     <div id="myModal2" class="modal2">
+            <div class="modalContent2">
+                <span class="close2">&times;</span>
+                <span class="modal_heading2">
+                    ENTER YOUR DETAILS
+                </span>
+                <form action="#">
+                    <input type="email" name="email" placeholder="Email" ><br>
+                    <input type="text" name= "name" placeholder="Name"><br>
+<!--                    <input type="password" placeholder="Password"><br>-->
+                    <input type="text" name="number" placeholder="Mobile Number">
+                    <div class="part2">
+                    <p>Select Gender :
+                    <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    </select></p>
+                                        
+<!--
+                     <fieldset data-role="controlgroup" data-type="horizontal">
+      <legend>Choose your gender:</legend>
+       
+        <input type="radio" class = "radio" name="gender" id="male" value="male"> Male
+        <br>
+        <input type="radio" class = "radio" name="gender" id="female" value="female">Female<br>
+      </fieldset>
+-->
+                                     
+<!--
+                        Gender<br>
+                    <label >
+                    <input type="radio" name="gender" value="male" />
+                    Male
+                    </label>
+                       <br>
+                   <label>
+                    <input type="radio" name="gender" value="female" />
+                    Female
+                    </label>
+-->                  
+                    
+                    <p>Select Age Group :
+                    <select name="devices">
+                    <option value="category1">18-25</option>
+                    <option value="category2">25-30</option>
+                    <option value="category3">30-40</option>
+                    <option value="category4"> > 40</option>
+                    </select></p>
+                    <p>Occupation :
+                    <select name="devices">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="private">Private Sector</option>
+                    <option value="other"> Other</option>
+                    </select></p>
+                    </div>
+                    <input type="submit" class="submit" value="Submit">
+                </form>
+             </div>
+      </div>
+        
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!--------------------------------main content--------------------------------->
+      <div class = "mainContent">
+         <div class = "notification">
+             <b><marquee>Posted on - 2 jan 2018 ; Wanted a responsible female maths teacher for std 10</marquee>
+             <div class = "second">Notification</div>
+             </b>  
+             
+         </div>
+          <article class = "topContent" id = "topContent">
+              <p>HOME TUITOR WITH HIGH ENTHUSIASM TO TEACH<br></p>
+                      Wisdom Home Tuition provides you with .................
+              <b>
+              <ul>
+                 <li>Get Personalised tutor at your door step </li>
+                 <li>Confirmation after Free Demo</li>
+                 <li>Quick and Responsive Reply </li>
+                 <li>Reasonalbe fee</li>
+                 <li>Variety of Courses</li>
+                 <li>For Boards and Competative levels</li>
+             </ul>
+             </b>
+          </article>
+          
+          <div class ="topSidebar">
+              <a name = "student">
+               <div class= "topSidebar1">
+                   <button id = "registerStudent" class="register" onclick = "display()" >
+                <h2><p>Get Home Tutor</p></h2> 
+                </button>
+                </div> </a>
+                <a name = "tutor">
+                <div class = "topSidebar2">
+                   <button class="register" id = "registerTutor">
+                       <h2><p>Become Home Tutor</p></h2> 
+                   </button>
+                    </div> </a>
+          </div>
+         
+      <div class = "review">
+          <div class = "r1">
+          abcd
+          </div>
+          <div class = "r2">
+          efgh
+          </div>   
+          <div class = "r3">
+          ijk
+          </div>    
+      </div>      
+      </div>
+   
+   <a name = "courses">
+         <div class = "courseDetail">
+             <h2>COURSES</h2>
+             <ul>
+                 <li><img src="picture/icon/chemistry.png" alt="">CHEMISTRY</li>
+                 <li> <img src="picture/icon/maths.png" alt="">MATHEMATICS</li>
+                 <li> <img src="picture/icon/physics.png" alt="">PHYSICS</li>
+                 <li>  <img src="picture/icon/computer.png" alt="">COMPUTER SCIENCE</li>
+                 <li> <img src="picture/icon/history.png" alt="">HISTORY</li>
+                 <li><img src="picture/icon/political.png" alt="">POLITICAL SCIENCE</li>
+                 <li>  <img src="picture/icon/geography.png" alt="">GEOGRAPHY</li>
+                 <li> <img src="picture/icon/economics.png" alt="">ECONOMICS</li>
+                 <li><img src="picture/icon/english.png" alt="">ENGLISH</li>
+                 <li><img src="picture/icon/physicaleducation.png" alt="">PHYSICAL EDUCATION
+             </li>
+            </ul>
+           </div>
+   </a>
+  
+    <a name = "material">
+      <div class = "studyMaterial">
+          
+        <h2>STUDY MATERIAL</h2>
+       <p> Any reference can be followed with minimum of NCERT syllabus<br>
+        Online link to various online courses and material are given below which can be refered apart form course study:-</p>
+        <ul>
+            <li><a href="http://ncert.nic.in/ebooks.html">NCERT</a></li>
+            <li><a href="http://nptel.ac.in/">NPTEL</a></li>
+            <li><a href="https://www.khanacademy.org/">KHAN ACADEMY</a></li>
+            <li><a href="https://www.coursera.org/">COURSERA</a></li>
+            <li><a href="https://ocw.mit.edu/index.htm">MIT OPEN COURSE WARE</a></li>
+            <li><a href="https://unacademy.com/">UNACADEMY</a></li>
+            <li><a href="https://www.udemy.com/">UDEMY</a></li>
+            <li><a href="https://in.udacity.com/">UDACITY</a></li>
+        </ul>
+      </div>
+    </a>
+   
+    
+    
+    
+    
+
+<!------------------------------------footer------------------------------ -->
+    <footer class = "mainFooter">
+             <font size = "20%">&copy;</font> Copyright Wisdom Home tuition Site All rights reserved 
+                   <a href = "#">privacy policy</a> | <a href = "#">terms and condition</a>    
+   </footer>
+    
+    
+    </div>
+<!------------------------------------script--------------------------------------->
+    <script type = "text/javascript" src="particles.min.js"></script>
+    <script type = "text/javascript" src = "particles.js"></script>
+    <script>
+        var modal = document.getElementById("myModal");
+var btn = document.getElementById("registerStudent");
+var span = document.getElementsByClassName("close")[0];
+        var modal2 = document.getElementById("myModal2");
+var btn2 = document.getElementById("registerTutor");
+var span2 = document.getElementsByClassName("close2")[0];
+//function display(){
+        
+ //   modal.style.display = "block";
+   
+//}
+function blognotmade(){
+    window.alert("Page you requested not found");
+}
+function number(){
+    window.alert("+91 8336065442\n+91 9432329624\n+91 8981339511");
+}
+function email(){
+    window.alert("wisdomtuition.info@gmail.com");
+}
+btn.onclick = function() {
+    modal.style.display = "block";
+   // document.getElementById("body").style.opacity=".9";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+btn2.onclick = function() {
+    modal2.style.display = "block";
+   // document.getElementById("body").style.opacity=".9";
+}
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal2.style.display = "none";
+    }
+}
+
+//fixed navigation bar
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
+    
+</body>
+</html>

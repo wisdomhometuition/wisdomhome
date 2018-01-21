@@ -1,0 +1,648 @@
+/*----------------------------particles--------------------------*/
+#particle {
+  background-color: black;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:0; 
+}
+#overlay {
+  position: relative;
+}
+
+/*------------------------------body------------------------------*/
+body{
+    background-color: black;
+}
+a{
+    text-decoration:  none;
+    color: aliceblue;
+}
+
+a:link,a:visited{
+    
+}
+a:hover,a:active{
+    
+}
+/*------------------main header including navigation bar---------------*/
+.imageHeader{
+    height: 200px;
+}
+.logo{
+    
+    float: left;
+    width: 14%;
+    opacity: .4;
+    
+}
+iframe{
+    float: left;
+    width: 85%;
+    
+    opacity: .4;
+    pointer-events: none;
+    
+}
+
+
+.mainHeader nav{
+    z-index: 1;
+    border:1px solid #999; 
+    opacity: 1;
+    overflow: auto;
+    background-color: #666;
+    height: 50% auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+   
+}
+
+.mainHeader nav ul{
+    list-style: none;
+    margin: 0 auto;
+    
+}
+
+.mainHeader nav ul li{
+/*    width: 225px;*/
+    float: left;
+    display: inline;
+    border:1px solid #669;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited{
+    color:beige;
+    font-size: 150%;
+    font-weight: 850;
+    font-family: monospace;
+    display: inline-block;
+    
+    padding: 15px 40px 20px 40px;
+    height : 20px;
+}
+
+.mainHeader nav a:hover,.mainHeader nav a:active,.mainHeader nav .active a:link,
+.mainHeader nav .active a:visited{
+/*    width: 148px;*/
+    background-color: orangered;
+    text-shadow: none;
+    
+}
+
+.mainHeader nav ul li a{
+    height: 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+.dropdown {
+    
+    border-radius: 5px;
+    border:1px solid #669;
+    float: left;
+    display: inline;
+    overflow: hidden;
+    width: 20% auto;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 150%;
+  font-family: monospace;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 40px 20px 40px;
+    
+  background-color: inherit;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+ 
+  display: none;
+  position: absolute;
+  background-color: #666;
+  width: 165px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: yellow;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block; 
+    background-color: #666;
+}
+
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+        
+/*-----------------------main content---------------------*/
+.topContent{
+    margin-top: 10px;
+    padding:10px 10px 10px 10px;
+    width: auto;
+    height: auto;
+    background-color: cornflowerblue;
+    opacity: .5;
+/*    border:1px solid #669;*/
+    border-radius: 3px;
+    font-size: 140%;
+/*    float: left;*/
+}
+
+.topContent ul li{
+    padding: 5px;
+}
+.topContent p{
+    font-size: 155%;
+     text-shadow: 0 0 3px #FF0000;
+    color: #ffffff;
+}
+
+.notification{
+    background-color: transparent;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 12s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    opacity: .5;
+    padding: 10px 10px 10px 10px;
+    
+    border-radius: 2px;
+    margin-top: 10px;
+    font-size: 150%;
+    color:yellow;
+    text-shadow: 0 0 3px #FF0000;
+      
+}
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes example {
+    0%   {background-color: red;}
+    15%  {background-color: yellow;}
+    30%  {background-color: blue;}
+    45%  {background-color: blue;}
+    70%  {background-color: palevioletred;}
+    100% {background-color: white;}
+}*/
+
+/* Standard syntax */
+/*@keyframes example {
+    0%   {background-color: red;}
+    15%  {background-color: yellow;}
+    30%  {background-color: blue;}
+    45%  {background-color: palevioletred;}
+    70%  {background-color: darkgray;}
+    100% {background-color: white;}
+}*/
+.second{
+    position: relative;
+    text-align: center;
+    color: red;
+    z-index: -1;
+    
+}
+.topSidebar{
+    margin-top: 100px;
+}
+.topSidebar2{
+    margin-top: 50px;
+}
+.register{
+    margin: 20px auto;
+    display:block;
+    width:300px;
+    height:80px;
+    border:3px solid white;
+    background-color:rgba(255,255,255,0);
+    color:white;
+    font-family:sans-serif;
+    font-weight: 900;
+    font-size: 12pt;
+    border-radius: 5px;
+    transition: background-color 1000ms, color 1000ms;
+}
+.register:hover{
+    background-color:rgba(255,255,255,1);
+    color:#222;
+    cursor:pointer;
+    transition: background-color 1000ms, color 1000ms;
+}
+
+
+.review{
+    
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    opacity: .58;
+/*    background: red;    */
+}
+.r1{
+    width: 31%;
+    height: 200px ;
+     background: orange;
+    float: left;
+    padding: 2px 2px 2px 2px;
+    margin-right: 2%;
+    border-radius: 200px;
+    
+}
+.r2{
+    width: 31%;
+    height: 200px ;
+     background: yellow;
+    float:left;
+    padding: 2px 2px 2px 2px;
+      margin-right: 2%;
+    border-radius: 200px;
+}
+.r3{
+    width: 31%;
+    height: 200px ;
+     background: green;
+    float:left;
+    padding: 2px 2px 2px 2px;
+    border-radius: 200px;
+}
+
+.courseDetail{
+    font-size: 25px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    padding-top: 5px;
+    width: 100%;
+    height: auto;
+    opacity: .7;
+    background-color: darkred;
+    color: black;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 5px
+}
+.courseDetail img{
+    width: 50px;
+    padding: 5px 50px 5px 5px;
+}
+
+.studyMaterial{
+    margin-bottom: 100px;
+    margin-top: 10px;
+    padding-top: 5px;
+    width: 100%;
+    height: auto;
+    opacity: .7;
+    background-color: purple;
+    color: black;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 5px
+}
+.studyMaterial h2{
+    
+}
+.studyMaterial p{
+    font-size: 150%
+}
+.studyMaterial li{
+        font-size: 150%
+}
+.studyMaterial ul a:hover,.studyMaterial ul a:active,.studyMaterial ul .active a:link,
+.studyMaterial ul .active a:visited{
+/*    width: 148px;*/
+    background-color: black;
+    text-shadow: none;
+    
+}
+
+/*----------------------footer----------------------------*/
+
+.mainFooter{
+/*    position: absolute;*/
+    border:1px solid #999; 
+   opacity: .25;
+    width:100%;
+    height: 50px auto;
+    font-weight: 500;
+    font-size: 110%;
+    font-family: monospace;
+    float: left;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+/*    margin-top: .5%;*/
+    background-color: #666;
+    
+}
+
+
+/*---------------------------------form style 1----------------------------------*/
+.modal{
+    
+    z-index: 1;
+    display:none;
+    width:295px ;
+    height:550px ;
+    margin:auto;
+    position: absolute;
+    top:250px; bottom:0px;
+    right:0px; left:0px;
+/*    background: black ;*/
+/*    border:1px solid #222;*/
+    padding:20px;
+    box-shadow: 0px 0px 50px 5px black;
+    background-color: gray;
+     
+}
+.modalContent{
+   
+    width:295px;
+    height:auto;
+    
+    opacity: 1;
+    position:relative;
+    background:transparent;
+    transition:all 500ms ease;
+}
+
+.modalContent:target{
+    opacity:1;
+   
+}
+
+.modalContent > div{
+    transform: translate(0px, -50px);
+	transition: all 500ms ease;
+}
+
+.modalContent:target > div{
+    transform: translate(0px, 0px);
+}
+
+
+
+.modal_heading{
+    box-sizing: border-box;
+    width:100%;
+    display:block;
+    height:40px;
+    margin-bottom:10px;
+    color:yellow;
+    padding:5px;
+    text-align: center;
+    font-size:20pt;
+    font-family: big john;
+    border-bottom: 2px solid #fefefe;
+}
+
+input{
+   
+    margin-bottom: 15px;
+    padding:5px;
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height:40px;
+    border:0px;
+    font-family: georgia;
+    font-size: 14pt;
+    text-align: center;
+}
+
+select {
+    min-width:265px;
+    min-height: 40px;
+    border-width: 3px;
+    border-color: rgba(50, 50, 50, 0.14);
+    margin: 10px 10px 10px 0px;
+}
+/*
+input[type=radio] {
+    float: left;
+     text-align: left;
+    display:inline;
+    border: 0px;
+    width: 100%;
+    height: 1.8em;
+}
+*/
+
+
+.part2{
+    line-height: 1.5px;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    color: yellow;
+}
+.part2 input{
+    
+     text-align: left;
+    display:inline;
+}
+
+.part2 p{
+    
+    font-size: 12pt;
+    
+    
+}
+
+.submit{
+    background:red;
+    color:white;
+    font-size:15pt;
+    margin-top:5px;
+}
+.submit:hover{
+    background:#b80000;
+}
+.close{
+    
+    color:white;
+    position: absolute;
+    border:2px solid #333;
+    padding:7px 9px 11px 9px;
+    font-family: big john;
+    background:black;
+    text-decoration: none;
+    top:-20px;
+    right:-20px;
+    border-radius: 50%;
+    transition: background 500ms;
+}
+
+.close:hover{
+    background:#444;
+    cursor:pointer;
+}
+
+/*<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->*/
+/*---------------------------------form style 2----------------------------------*/
+
+.modal2{
+    
+    z-index: 1;
+    display:none;
+    width:295px ;
+    height:550px ;
+    margin:auto;
+    position: absolute;
+    top:250px; bottom:0px;
+    right:0px; left:0px;
+/*    background: black ;*/
+/*    border:1px solid #222;*/
+    padding:20px;
+    box-shadow: 0px 0px 50px 5px black;
+    background-color: gray;
+     
+}
+.modalContent2{
+   
+    width:295px;
+    height:auto;
+    
+    opacity: 1;
+    position:relative;
+    background:transparent;
+    transition:all 500ms ease;
+}
+
+.modalContent2:target{
+    opacity:1;
+   
+}
+
+.modalContent2 > div{
+    transform: translate(0px, -50px);
+	transition: all 500ms ease;
+}
+
+.modalContent2:target > div{
+    transform: translate(0px, 0px);
+}
+
+
+
+.modal_heading2{
+    box-sizing: border-box;
+    width:100%;
+    display:block;
+    height:40px;
+    margin-bottom:10px;
+    color:yellow;
+    padding:5px;
+    text-align: center;
+    font-size:20pt;
+    font-family: big john;
+    border-bottom: 2px solid #fefefe;
+}
+
+/*input{
+   
+    margin-bottom: 15px;
+    padding:5px;
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height:40px;
+    border:0px;
+    font-family: georgia;
+    font-size: 14pt;
+    text-align: center;
+}
+
+select {
+    min-width:265px;
+    min-height: 40px;
+    border-width: 3px;
+    border-color: rgba(50, 50, 50, 0.14);
+    margin: 10px 10px 10px 0px;
+}*/
+/*
+input[type=radio] {
+    float: left;
+     text-align: left;
+    display:inline;
+    border: 0px;
+    width: 100%;
+    height: 1.8em;
+}
+*/
+
+/*
+.part2{
+    line-height: 1.5px;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    color: yellow;
+}
+.part2 input{
+    
+     text-align: left;
+    display:inline;
+}
+
+.part2 p{
+    
+    font-size: 12pt;
+    
+    
+}
+
+.submit{
+    background:red;
+    color:white;
+    font-size:15pt;
+    margin-top:5px;
+}
+.submit:hover{
+    background:#b80000;
+}*/
+.close2{
+    
+    color:white;
+    position: absolute;
+    border:2px solid #333;
+    padding:7px 9px 11px 9px;
+    font-family: big john;
+    background:black;
+    text-decoration: none;
+    top:-20px;
+    right:-20px;
+    border-radius: 50%;
+    transition: background 500ms;
+}
+
+.close2:hover{
+    background:#444;
+    cursor:pointer;
+}
+/*<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->*/
